@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+
+<form method="POST" action="" class="form-group">
+    {% csrf_token %}
+    <fieldset>
+    <legend>Register</legend>
+        <div class="col-md-3">
+            <label class="control-label" for="device">Device Number</label>
+                <select name="device_id" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            <label for="red">Red bottle</label>
+            <input type="checkbox" name="red"/><br/>
+            <label for="blue">Blue bottle</label>
+            <input type="checkbox" name="blue"><br/>
+            <label for="green">Green Bottle</label>
+            <input type="checkbox" name="green"/><br/>
+            <label for="tape">Tape</label>
+            <input type="checkbox" name="tape"/><br/>
+            <input type="submit" value="register" class="btn btn-default">
+        </div>
+    </fieldset>
+</form>
+ {% endblock %}

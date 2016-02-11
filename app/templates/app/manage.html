@@ -1,0 +1,54 @@
+{% extends "layouts/base.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<fieldset>
+    <legend>Manager</legend>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Device</th>
+                <th>Red Bottle</th>
+                <th>Blue Bottle</th>
+                <th>Green Bottle</th>
+                <th>Tape</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in state %}
+            <tr>
+                <td>{{ data.device }}</td>
+                <td>
+                    {% if data.red == 1 %}
+                        True
+                    {% else %}
+                        False
+                    {% endif %}
+                </td>
+                <td>
+                    {% if data.blue == 1 %}
+                        True
+                    {% else %}
+                        False
+                    {% endif %}
+                </td>
+                <td>
+                    {% if data.green == 1 %}
+                        True
+                    {% else %}
+                        False
+                    {% endif %}
+                </td>
+                <td>
+                    {% if data.tape == 1 %}
+                        True
+                    {% else %}
+                        False
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</fieldset>
+
+ {% endblock %}
