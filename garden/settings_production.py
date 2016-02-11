@@ -95,7 +95,7 @@ DATABASES = {
         'NAME': "garden",
         'USER': "garden",
         'PASSWORD': "gardenperformance",
-        'HOST': "localhost",
+        'HOST': "garden.cytjkt9qynol.ap-northeast-1.rds.amazonaws.com",
         'PORT': "3306"
     }
 }
