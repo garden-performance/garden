@@ -29,12 +29,6 @@ def home(request):
         blue = set_light(request, 'blue')
         green = set_light(request, 'green')
         tape = set_light(request, 'tape')
-        default = dict(
-            red=red,
-            blue=blue,
-            green=green,
-            tape=tape
-        )
         created = Devices.objects.filter(device_id=device_id).count()
         if created != 0:
             Devices.objects.filter(device_id=device_id).update(

@@ -92,9 +92,9 @@ WSGI_APPLICATION = 'garden.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "garden",
-        'USER': "root",
-        'PASSWORD': "060510shiba",
+        'NAME': "xxxxx",
+        'USER': "xxxxx",
+        'PASSWORD': "xxxxxxx",
         'HOST': "localhost",
         'PORT': "3306"
     }
