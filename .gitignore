@@ -4,3 +4,6 @@ settings.py
 # DOLL FILE
 __pycache__/
 *.py[cod]
+
+# pycharm
+.idea/
