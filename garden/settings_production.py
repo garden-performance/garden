@@ -25,7 +25,7 @@ SITE_ROOT = abspath(os.path.join(dirname(__file__), ".."))
 
 # 静的ファイルを保存するフォルダのパスを設定
 STATICFILES_DIRS = (
-    os.path.join(SITE_ROOT, '/app/static'),
+    os.path.join(SITE_ROOT, 'app/static'),
 )
 
 # Quick-start development settings - unsuitable for production
