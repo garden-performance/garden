@@ -16,6 +16,8 @@ from os.path import abspath, dirname
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# STATIC_ROOT
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 # プロジェクトのルートをSITE_ROOTとする
 SITE_ROOT = abspath(os.path.join(dirname(__file__), ".."))
